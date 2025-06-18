@@ -15,7 +15,6 @@ export async function packageInfo(): Promise<PackageInfo> {
 }
 
 function parsePkgInfo(value: unknown): PackageInfo {
-  console.log(value);
   if (typeof value !== "object") {
     throw new TypeError("Expected an object.");
   }

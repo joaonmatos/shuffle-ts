@@ -1,6 +1,6 @@
 {
   "name": "@joaonmatos/shuffle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Utility that shuffles the lines in a text file",
   "keywords": [
