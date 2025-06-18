@@ -1,0 +1,47 @@
+{
+  "name": "@joaonmatos/shuffle",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utility that shuffles the lines in a text file",
+  "keywords": [
+    "cli"
+  ],
+  "homepage": "https://github.com/joaonmatos/shuffle-ts",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "João N. Matos",
+    "email": "git@joaonmatos.com",
+    "url": "https://www.joaonmatos.com/"
+  },
+  "files": [
+    "bin/**/*.ts",
+    "src/**/*.ts"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./handler": "./src/handler.ts",
+    "./util": "./src/util.ts"
+  },
+  "main": "./src/index.ts",
+  "bin": {
+    "shuffle": "./bin/shuffle.ts"
+  },
+  "repository": "github:joaonmatos/shuffle-ts",
+  "scripts": {
+    "prebuild": "prettier --write .",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "cli": "node bin/shuffle.ts"
+  },
+  "dependencies": {
+    "cmd-ts": "^0.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
