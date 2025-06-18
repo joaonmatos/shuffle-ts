@@ -18,9 +18,7 @@
     "src/**/*.ts"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./handler": "./src/handler.ts",
-    "./util": "./src/util.ts"
+    ".": "./src/index.ts"
   },
   "main": "./src/index.ts",
   "bin": {

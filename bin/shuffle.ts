@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 import { argv } from "node:process";
 import * as cmd from "cmd-ts";
-import { handler } from "../src/handler.ts";
+import { Handler } from "../src/index.ts";
 import { packageInfo } from "../src/meta.ts";
 
 const { description, version } = await packageInfo();
+
+const handler = Handler.create();
 
 const command = cmd.command({
   name: "shuffle",
@@ -24,7 +26,7 @@ const command = cmd.command({
       description: "The output file to write the shuffled lines to.",
     }),
   },
-  handler,
+  handler: (input) => handler.handle(input),
 });
 
 cmd.run(command, argv.slice(2));
