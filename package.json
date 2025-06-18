@@ -1,6 +1,6 @@
 {
   "name": "@joaonmatos/shuffle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Utility that shuffles the lines in a text file",
   "keywords": [
@@ -9,7 +9,8 @@
   "homepage": "https://github.com/joaonmatos/shuffle-ts",
   "license": "Apache-2.0",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "author": {
     "name": "João N. Matos",
