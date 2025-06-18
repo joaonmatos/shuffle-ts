@@ -34,7 +34,8 @@
         "dbaeumer.vscode-eslint",
         "christian-kohler.npm-intellisense",
         "esbenp.prettier-vscode",
-        "amazonwebservices.amazon-q-vscode"
+        "amazonwebservices.amazon-q-vscode",
+        "github.vscode-github-actions"
       ]
     }
   },
